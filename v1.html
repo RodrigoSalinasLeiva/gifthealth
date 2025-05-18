@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos - Set 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f7f7f7;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+    .photo {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .photo img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .photo a {
+      text-decoration: none;
+      color: #007acc;
+      display: block;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galería de Fotos</h1>
+  <div class="gallery">
+    <div class="photo">
+      <img src="fotos/foto1/v1.jpg" alt="Foto 1">
+      <a href="fotos/foto1/v1.jpg" target="_blank">Ver Foto 1</a>
+    </div>
+    <div class="photo">
+      <img src="fotos/foto2/v1.jpg" alt="Foto 2">
+      <a href="fotos/foto2/v1.jpg" target="_blank">Ver Foto 2</a>
+    </div>
+    <div class="photo">
+      <img src="fotos/foto3/v1.jpg" alt="Foto 3">
+      <a href="fotos/foto3/v1.jpg" target="_blank">Ver Foto 3</a>
+    </div>
+  </div>
+</body>
+</html>
